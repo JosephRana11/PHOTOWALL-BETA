@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Font Awesome 5 CSS -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'>
+    <!-- Social Buttons CSS -->
+    <link rel="stylesheet" href="css/button.css">	
+    <link rel="stylesheet" href="css/openimage.css">
+
+    <title>PHOTOWALL</title>
+
+    <link rel="icon" href="logo/favicon.ico">
+    <link rel="stylesheet" href="css/note.css">
+
+    <style>
+      body{
+        background-color: whitesmoke;
+      }
+      .layout {
+        width: auto;
+        height: auto;
+        display: grid;
+        grid-template-rows: repeat(3, 220px);
+        grid-template-columns: repeat(3, 220px);
+        gap: 8px;
+        justify-content: center;
+        margin-top: 5%;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+      }
+
+      .photobox {
+        border: none;
+        border-width: 1px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .title-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .title {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        letter-spacing: 4px;
+        font-weight: 500;
+        font-size: 30px;
+        padding-top: 40px;
+        padding-bottom: 0px;
+        text-align: center;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+      }
+
+      .image {
+        max-width: 100%;
+        height: auto;
+        transition: opacity 0.15s;
+      }
+      .image:hover{
+        opacity: 90%;
+      }
+      @media (max-width: 767px) {
+        .layout {
+        width: auto;
+        height: auto;
+        display: grid;
+        grid-template-rows: repeat(9, 220px);
+        grid-template-columns: repeat(1, 220px);
+        gap: 8px;
+        justify-content: center;
+        margin-top: 5%;
+         }}
+    </style>
+  </head>
+  <body>
+    <div class="title-container">
+      <div class="title">PHOTOWALL</div>
+    </div>
+    <section class="layout">
+      <div class="photobox">
+        <img src="images/image10.jpg" alt="" class="image" onclick="openImage(this)">
+      </div>
+      <div class="photobox">
+        <img src="images/image11.jpg" alt="" class="image" onclick="openImage(this)">
+      </div>
+      <div class="photobox">
+        <img src="images/image12.jpg" alt="" class="image" onclick="openImage(this)">
+      </div>
+      <div class="photobox">
+        <img src="images/image13.jpg" alt="" class="image" onclick="openImage(this)">
+      </div>
+      <div class="photobox">
+          <img src="images/image14.jpg" alt="" class="image" onclick="openImage(this)">
+      </div>
+      <div class="photobox">
+        <img src="images/image15.jpg" alt="" class="image" onclick="openImage(this)">
+      </div>
+      <div class="photobox">
+        <img src="images/image16.jpg" alt="" class="image" onclick="openImage(this)">
+      </div>
+      <div class="photobox">
+        <img src="images/image17.jpg" alt="" class="image" onclick="openImage(this)">
+      </div>
+      <div class="photobox">
+        <img src="images/image18.jpg" alt="" class="image" onclick="openImage(this)">
+      </div>
+      <div id="overlay" class="photobox-overlay" onclick="closeImage()">
+        <img id="fullImage" src="" alt="">
+      </div>
+    </section>
+    <br>
+    <br>
+    <div class="wrapper" style="background: none; margin-top: 0px; padding-top: 0px;">
+      <a href="index.html" class="icon youtube" id="previousPage" target="_self">
+        <span><i class="fa fa-angle-left"></i></span>
+      </a>
+      <a href="page2.html" class="icon youtube" id="nextPage" target="_self">
+        <span><i class="fa fa-angle-right"></i></span>
+      </a>
+    </div>
+    <script src="js/pagecheck.js"></script>
+
+    <div class="usernote">Photowall is still under developement.Thank you for trying out the beta version.Regards,Joseph Rana June2023</div>
+    
+    <div class="wrapper">
+      <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSMTDxGlQgKJHTKpvcbzsxfJsstkmxQTtvJkmTQJgbRqJCrmjrSrvxbMxvwhbrCWmBgWHNfg" class="icon twitter" target="_blank">
+        <span><i class="far fa-envelope"></i></span>
+      </a>
+      <a href="https://www.instagram.com/jmag.ar/" class="icon instagram" target="_self">
+        <span><i class="fab fa-instagram"></i></span>
+      </a>
+      <a href="https://github.com/JosephRana11" class="icon github" target="_self">
+        <span><i class="fab fa-github"></i></span>
+      </a>
+    </div>
+   
+   <script src="js/script.js"></script>
+
+  </body>
+</html>
